@@ -2,4 +2,4 @@ Slackの指定チャンネルのメッセージを、Discordの指定チャン�
 
 ローカルで動かす場合はngrokを利用して、Event SubscriptionsのRequest URLチェックをクリアしてください。
 
-- https://<ngrok domain>/api/events
+- https://`ngrok domain`/api/events

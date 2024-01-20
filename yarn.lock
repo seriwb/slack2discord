@@ -66,7 +66,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/rest@npm:2.2.0, @discordjs/rest@npm:^2.1.0":
+"@discordjs/rest@npm:^2.1.0":
   version: 2.2.0
   resolution: "@discordjs/rest@npm:2.2.0"
   dependencies:
@@ -690,15 +690,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cors@npm:2.8.17":
-  version: 2.8.17
-  resolution: "@types/cors@npm:2.8.17"
-  dependencies:
-    "@types/node": "npm:*"
-  checksum: 457364c28c89f3d9ed34800e1de5c6eaaf344d1bb39af122f013322a50bc606eb2aa6f63de4e41a7a08ba7ef454473926c94a830636723da45bf786df032696d
-  languageName: node
-  linkType: hard
-
 "@types/express-serve-static-core@npm:^4.17.33":
   version: 4.17.41
   resolution: "@types/express-serve-static-core@npm:4.17.41"
@@ -893,13 +884,6 @@ __metadata:
   version: 1.0.2
   resolution: "@types/tsscmp@npm:1.0.2"
   checksum: 7e6c3e7f77334753eec014927fb046d5c6395e9d6e325c9bde2b9cfca88ff98eaa24719aaae37ed6243ea75bb40a5bba38e426769ac6e9830b27536bf2c1d984
-  languageName: node
-  linkType: hard
-
-"@types/uuid@npm:9.0.7":
-  version: 9.0.7
-  resolution: "@types/uuid@npm:9.0.7"
-  checksum: b329ebd4f9d1d8e08d4f2cc211be4922d70d1149f73d5772630e4a3acfb5170c6d37b3d7a39a0412f1a56e86e8a844c7f297c798b082f90380608bf766688787
   languageName: node
   linkType: hard
 
@@ -1398,7 +1382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.6.5, axios@npm:^1.6.0, axios@npm:^1.6.5":
+"axios@npm:^1.6.0, axios@npm:^1.6.5":
   version: 1.6.5
   resolution: "axios@npm:1.6.5"
   dependencies:
@@ -1854,16 +1838,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cors@npm:2.8.5":
-  version: 2.8.5
-  resolution: "cors@npm:2.8.5"
-  dependencies:
-    object-assign: "npm:^4"
-    vary: "npm:^1"
-  checksum: 373702b7999409922da80de4a61938aabba6929aea5b6fd9096fefb9e8342f626c0ebd7507b0e8b0b311380744cc985f27edebc0a26e0ddb784b54e1085de761
-  languageName: node
-  linkType: hard
-
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -1902,13 +1876,6 @@ __metadata:
   version: 4.6.3
   resolution: "dateformat@npm:4.6.3"
   checksum: e2023b905e8cfe2eb8444fb558562b524807a51cdfe712570f360f873271600b5c94aebffaf11efb285e2c072264a7cf243eadb68f3eba0f8cc85fb86cd25df6
-  languageName: node
-  linkType: hard
-
-"dayjs@npm:1.11.10":
-  version: 1.11.10
-  resolution: "dayjs@npm:1.11.10"
-  checksum: 4de9af50639d47df87f2e15fa36bb07e0f9ed1e9c52c6caa1482788ee9a384d668f1dbd00c54f82aaab163db07d61d2899384b8254da3a9184fc6deca080e2fe
   languageName: node
   linkType: hard
 
@@ -2042,13 +2009,6 @@ __metadata:
   version: 0.37.61
   resolution: "discord-api-types@npm:0.37.61"
   checksum: ce3d28df71df26fbd32f7a13c8b5c77ff3f9ad3612e8bbd44236a498388b73e34e39e1c5f6c4652950a1f54024f934275e0f10e49c2dcf3aafe58a1eb3776b74
-  languageName: node
-  linkType: hard
-
-"discord-api-types@npm:0.37.67":
-  version: 0.37.67
-  resolution: "discord-api-types@npm:0.37.67"
-  checksum: b003ff4c0c82814f2dc3450d6765d470111c001d6f1eb1ec29f2d99c43590adeef1d400c0247f7c5c9044a3c93027d1d6409454401f091e4434dfa1408723545
   languageName: node
   linkType: hard
 
@@ -4835,7 +4795,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4, object-assign@npm:^4.1.1":
+"object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: 1f4df9945120325d041ccf7b86f31e8bcc14e73d29171e37a7903050e96b81323784ec59f93f102ec635bcf6fa8034ba3ea0a8c7e69fa202b87ae3b6cec5a414
@@ -6034,20 +5994,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "slack2discord@workspace:."
   dependencies:
-    "@discordjs/rest": "npm:2.2.0"
     "@slack/bolt": "npm:3.17.1"
-    "@types/cors": "npm:2.8.17"
     "@types/node": "npm:20.11.5"
     "@types/react": "npm:18.2.48"
     "@types/react-dom": "npm:18.2.18"
-    "@types/uuid": "npm:9.0.7"
     "@typescript-eslint/eslint-plugin": "npm:6.19.0"
     "@typescript-eslint/parser": "npm:6.19.0"
-    axios: "npm:1.6.5"
     browserify-zlib: "npm:0.2.0"
-    cors: "npm:2.8.5"
-    dayjs: "npm:1.11.10"
-    discord-api-types: "npm:0.37.67"
     discord.js: "npm:14.14.1"
     eslint: "npm:8.56.0"
     eslint-config-next: "npm:14.1.0"
@@ -6062,7 +6015,6 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     typescript: "npm:5.3.3"
-    uuid: "npm:9.0.1"
     zlib-sync: "npm:0.1.9"
   languageName: unknown
   linkType: soft
@@ -6780,15 +6732,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:9.0.1":
-  version: 9.0.1
-  resolution: "uuid@npm:9.0.1"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 1607dd32ac7fc22f2d8f77051e6a64845c9bce5cd3dd8aa0070c074ec73e666a1f63c7b4e0f4bf2bc8b9d59dc85a15e17807446d9d2b17c8485fbc2147b27f9b
-  languageName: node
-  linkType: hard
-
 "validate-npm-package-license@npm:^3.0.4":
   version: 3.0.4
   resolution: "validate-npm-package-license@npm:3.0.4"
@@ -6808,7 +6751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vary@npm:^1, vary@npm:~1.1.2":
+"vary@npm:~1.1.2":
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: f15d588d79f3675135ba783c91a4083dcd290a2a5be9fcb6514220a1634e23df116847b1cc51f66bfb0644cf9353b2abb7815ae499bab06e46dd33c1a6bf1f4f

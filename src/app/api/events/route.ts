@@ -1,10 +1,6 @@
 import { App } from '@slack/bolt';
 import { WebhookClient } from 'discord.js';
 import { NextResponse } from 'next/server';
-// import { REST } from '@discordjs/rest';
-// import { Routes } from 'discord-api-types/v10';
-
-// const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN || '');
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
@@ -31,18 +27,10 @@ export async function POST(request: Request, response: Response) {
       username = result.user?.real_name;
       avatarURL = result.user?.profile?.image_512;
     }
-
-    const fileInfo = body.files ? "（ファイル添付あり）" : "";
-
-    // RESTの場合はこうやって送信する
-    // await rest.post(Routes.channelMessages('チャンネルID'), {
-    //   body: {
-    //     content: body.event.text,
-    //   },
-    // });
+    const fileInfo = body.files ? '（ファイル添付あり）' : '';
 
     webhookClient.send({
-      content: body.event.text || '' + fileInfo,
+      content: (body.event.text || '') + fileInfo,
       username: username,
       avatarURL: avatarURL,
     });
